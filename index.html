@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Casino - Luxury Gaming</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container main-nav-content">
+            <a href="#home" class="logo">
+                <i class="fas fa-crown gold-icon"></i> ROYAL CASINO
+                <span class="logo-subtitle">Luxury Gaming</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#bonuses">Bonuses</a></li>
+                <li><a href="#live-casino">Live Casino</a></li>
+                <li><a href="#" id="vip-btn"><i class="fas fa-gem gold-icon"></i> VIP</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="#" class="btn btn-light-outline" id="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="#" class="btn btn-gold" id="register-btn">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-casino" id="home">
+        <div class="container hero-content-casino">
+            <div class="welcome-badge">
+                <i class="fas fa-bolt"></i> Licensed Casino #1
+            </div>
+
+            <h1>Welcome to <br> ROYAL CASINO</h1>
+
+            <p>Experience the taste of luxury and excitement. Over 5000 games, generous bonuses, and instant payouts</p>
+
+            <div class="hero-buttons">
+                <a href="#wheel" class="btn btn-gold btn-large"><i class="fas fa-gift"></i> Get Bonus 200%</a>
+                <a href="#games" class="btn btn-light-outline btn-large">Play Now</a>
+            </div>
+            
+            <div class="hero-stats">
+                <div><span>5000+</span> Games</div>
+                <div><span>24/7</span> Support</div>
+                <div><span>15 min</span> Withdrawal </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fortune-wheel text-center" id="wheel">
+        <div class="container">
+            
+            <a href="#" class="btn btn-gold btn-small-icon" id="try-luck-btn"><i class="fas fa-magic"></i> Try Your Luck</a>
+            <h2 class="wheel-title">Spin the Wheel of Fortune</h2>
+            <p class="wheel-subtitle">Get your welcome bonus now!</p>
+
+            <div class="wheel-js-container">
+                <div class="wheel-pointer"><i class="fas fa-caret-down"></i></div>
+                
+                <div class="wheel-spinner" id="wheel-spinner">
+                    
+                    <div class="wheel-segment" style="--i:0; --bg:var(--color-purple);"></div>
+                    <div class="wheel-segment" style="--i:1; --bg:#e74c3c;"></div>
+                    <div class="wheel-segment" style="--i:2; --bg:var(--color-gold);"></div>
+                    <div class="wheel-segment" style="--i:3; --bg:var(--color-purple);"></div>
+                    <div class="wheel-segment" style="--i:4; --bg:var(--color-gold);"></div>
+                    <div class="wheel-segment" style="--i:5; --bg:#e74c3c;"></div>
+                    <div class="wheel-segment" style="--i:6; --bg:var(--color-purple);"></div>
+                    <div class="wheel-segment" style="--i:7; --bg:var(--color-gold);"></div>
+                    
+                    
+                    <div class="wheel-text-segment" style="--i:0;"><span>250 FS</span></div>
+                    <div class="wheel-text-segment" style="--i:1;"><span>50%</span></div>
+                    <div class="wheel-text-segment" style="--i:2;"><span>100 FS</span></div>
+                    <div class="wheel-text-segment" style="--i:3;"><span>75%</span></div>
+                    <div class="wheel-text-segment" style="--i:4;"><span>200%</span></div>
+                    <div class="wheel-text-segment" style="--i:5;"><span>150 FS</span></div>
+                    <div class="wheel-text-segment" style="--i:6;"><span>100%</span></div>
+                    <div class="wheel-text-segment" style="--i:7;"><span>300%</span></div>
+                    
+                </div> 
+            </div>
+            <a href="#" class="btn btn-gold btn-large wheel-button" id="spin-btn"><i class="fas fa-dice"></i> Spin the Wheel</a>
+
+            <div class="wheel-accents">
+                <i class="fas fa-star accent-star star-1"></i>
+                <i class="fas fa-trophy accent-trophy"></i>
+            </div>
+
+            <div class="wheel-features">
+                <div class="feature-card-wheel">50% - 300%</div>
+                <div class="feature-card-wheel">100 - 250 FS</div>
+                <div class="feature-card-wheel">Instant deposit</div>
+                <div class="feature-card-wheel">No Wager х1</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="casino-games" id="games">
+        <div class="container">
+            <p class="section-top-subtitle">Our Games</p>
+            <h2 class="section-main-title">Over 5000 best games from the world's leading providers</h2>
+
+            <div class="game-filters">
+                <a href="#" class="btn btn-filter active" data-filter="all">All</a>
+                <a href="#" class="btn btn-filter" data-filter="hot">Popular</a>
+                <a href="#" class="btn btn-filter" data-filter="new-game">New</a>
+                <a href="#" class="btn btn-filter" data-filter="jackpot">Jackpots</a>
+                <a href="#" class="btn btn-filter" data-filter="slots">Slots</a>
+            </div>
+
+            <div class="game-grid">
+                
+                <div class="game-card" data-category="slots hot" data-game-name="Golden Royale Slots">
+                    <div class="game-image-wrap">
+                        <span class="badge hot">HOT</span>
+                        <img src="images/GoldenSlots.jfif" alt="Golden Royale Slots">
+                    </div>
+                    <div class="game-info">
+                        <h4>Golden Royale Slots</h4>
+                        <p class="game-category">Slots</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.8
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" data-category="roulette" data-game-name="VIP Roulette">
+                    <div class="game-image-wrap">
+                         <div class="play-icon-overlay"><i class="fas fa-play"></i></div>
+                        <img src="images/roulett.jfif" alt="VIP Roulette">
+                    </div>
+                    <div class="game-info">
+                        <h4>VIP Roulette</h4>
+                        <p class="game-category">Roulette</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.9
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="poker new-game" data-game-name="Royal Poker">
+                    <div class="game-image-wrap">
+                        <span class="badge new-game">NEW</span>
+                        <img src="images/royalPoker.jfif" alt="Royal Poker">
+                    </div>
+                    <div class="game-info">
+                        <h4>Royal Poker</h4>
+                        <p class="game-category">Poker</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="jackpot hot" data-game-name="Diamond Fortune">
+                    <div class="game-image-wrap">
+                        <span class="badge hot">HOT</span>
+                        <img src="images/diamondFortune.jfif" alt="Diamond Fortune">
+                    </div>
+                    <div class="game-info">
+                        <h4>Diamond Fortune</h4>
+                        <p class="game-category">Jackpot</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.6
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" data-category="blackjack" data-game-name="Luxury Blackjack">
+                    <div class="game-image-wrap">
+                        <img src="images/blackjack.jfif" alt="Luxury Blackjack">
+                    </div>
+                    <div class="game-info">
+                        <h4>Luxury Blackjack</h4>
+                        <p class="game-category">Blackjack</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.5
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="slots new-game" data-game-name="Crystal Slots">
+                    <div class="game-image-wrap">
+                        <span class="badge new-game">NEW</span>
+                        <img src="images/GoldenSlots.jfif" alt="Crystal Slots">
+                    </div>
+                    <div class="game-info">
+                        <h4>Crystal Slots</h4>
+                        <p class="game-category">Slots</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.4
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-card" data-category="baccarat" data-game-name="Platinum Baccarat">
+                    <div class="game-image-wrap">
+                        <img src="images/royalPoker.jfif" alt="Platinum Baccarat">
+                    </div>
+                    <div class="game-info">
+                        <h4>Platinum Baccarat</h4>
+                        <p class="game-category">Baccarat</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.7
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card" data-category="jackpot hot" data-game-name="Mega Jackpot Mania">
+                    <div class="game-image-wrap">
+                        <span class="badge hot">HOT</span>
+                        <img src="images/diamondFortune.jfif" alt="Mega Jackpot Mania">
+                    </div>
+                    <div class="game-info">
+                        <h4>Mega Jackpot Mania</h4>
+                        <p class="game-category">Jackpot</p>
+                        <div class="game-rating">
+                            <i class="fas fa-star gold-icon"></i> 4.9
+                        </div>
+                    </div>
+                </div>
+                
+            </div> </div>
+    </section>
+
+    <section class="casino-bonuses" id="bonuses">
+        <div class="container">
+            <h2 class="section-main-title">Bonuses and Promotions</h2>
+            <p class="section-top-subtitle" style="color: #ccc;">Generous offers for all players</p>
+
+            <div class="bonus-grid">
+                
+                <div class="bonus-card bonus-gold">
+                    <div class="bonus-icon"><i class="fas fa-gift"></i></div>
+                    <h4>Welcome Bonus</h4>
+                    <p>200% on the first deposit + 200 free spins</p>
+                    <div class="bonus-limit">up to 100 000 ₽</div>
+                    <a href="#" class="btn btn-gold btn-bonus-action" data-bonus-type="welcome">Get Bonus</a>
+                </div>
+                
+                <div class="bonus-card bonus-purple">
+                    <div class="bonus-icon"><i class="fas fa-percent"></i></div>
+                    <h4>Weekly Cashback</h4>
+                    <p>Get back up to 20% of your losses every Monday</p>
+                    <div class="bonus-limit">up to 50 000 ₽</div>
+                    <a href="#" class="btn btn-purple btn-bonus-action" data-bonus-type="cashback">Get Bonus</a>
+                </div>
+
+                <div class="bonus-card bonus-gold">
+                    <div class="bonus-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>VIP Program</h4>
+                    <p>Exclusive bonuses and a personal manager</p>
+                    <div class="bonus-limit">&infin;</div>
+                    <a href="#" class="btn btn-gold btn-bonus-action" data-bonus-type="vip">Get Bonus</a>
+                </div>
+
+                <div class="bonus-card bonus-purple">
+                    <div class="bonus-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Tournaments</h4>
+                    <p>Weekly tournaments with prize pools</p>
+                    <div class="bonus-limit">1 000 000 ₽</div>
+                    <a href="#" class="btn btn-purple btn-bonus-action" data-bonus-type="tournament">Get Bonus</a>
+                </div>
+                
+            </div> 
+        </div>
+    </section>
+
+    <section class="live-casino" id="live-casino">
+        <div class="container">
+            <div class="live-status-badge">LIVE Now</div>
+            <p class="section-top-subtitle">Live Casino</p>
+            <h2 class="section-main-title">Play with real dealers in real time</h2>
+
+            <div class="live-game-grid">
+                
+                <div class="live-game-card" data-live-game="VIP Roulette">
+                    <div class="live-image-wrap">
+                        <span class="live-badge live">LIVE</span>
+                        <span class="live-count"><i class="fas fa-user"></i> 127</span>
+                        <img src="images/roulett.jfif" alt="VIP Roulette Live">
+                    </div>
+                    <div class="live-info">
+                        <h4>VIP Roulette</h4>
+                        <p class="dealer-name">Dealer: Anna</p>
+                    </div>
+                </div>
+                
+                <div class="live-game-card" data-live-game="Platinum Blackjack">
+                    <div class="live-image-wrap">
+                        <span class="live-badge live">LIVE</span>
+                        <span class="live-count"><i class="fas fa-user"></i> 89</span>
+                        <img src="images/blackjack.jfif" alt="Platinum Blackjack Live">
+                    </div>
+                    <div class="live-info">
+                        <h4>Platinum Blackjack</h4>
+                        <p class="dealer-name">Dealer: Mikhail</p>
+                    </div>
+                </div>
+
+                <div class="live-game-card" data-live-game="Royal Baccarat">
+                    <div class="live-image-wrap">
+                        <span class="live-badge live">LIVE</span>
+                        <span class="live-count"><i class="fas fa-user"></i> 65</span>
+                        <img src="images/royalPoker.jfif" alt="Royal Baccarat Live">
+                    </div>
+                    <div class="live-info">
+                        <h4>Royal Baccarat</h4>
+                        <p class="dealer-name">Dealer: Elena</p>
+                    </div>
+                </div>
+
+            </div> <div class="live-features-grid">
+                <div class="feature-item-live">
+                    <i class="fas fa-video gold-icon"></i>
+                    <h4>HD Streaming</h4>
+                    <p>High-quality video in real-time</p>
+                </div>
+                <div class="feature-item-live">
+                    <i class="fas fa-user-friends gold-icon"></i>
+                    <h4>Professional Dealers</h4>
+                    <p>Experienced and friendly croupiers</p>
+                </div>
+                <div class="feature-item-live">
+                    <i class="far fa-clock gold-icon"></i>
+                    <h4>Round-the-clock</h4>
+                    <p>Tables available 24/7 without breaks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-casino-grid">
+            
+            <div class="footer-col about-col">
+                <a href="#" class="logo footer-logo-text">
+                    <i class="fas fa-crown gold-icon"></i> ROYAL CASINO
+                </a>
+                <p>Licensed online casino №1 with the best games and generous bonuses.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col quick-links-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Bonuses</a></li>
+                    <li><a href="#">VIP Program</a></li>
+                    <li><a href="#">Tournaments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col support-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Responsible Gaming</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contact-info-col">
+                <h4>Contacts</h4>
+                <p><i class="fas fa-envelope gold-icon"></i> support@royalcasino.com</p>
+                <p><i class="fas fa-phone-alt gold-icon"></i> +7 (800) 123-45-67</p>
+                <p><i class="fas fa-headset gold-icon"></i> 24/7 Online Support</p>
+            </div>
+            
+        </div>
+        
+        <div class="payment-methods text-center">
+            <h4>Payment Methods</h4>
+            <div class="payment-icons">
+                <span class="payment-badge">VISA</span>
+                <span class="payment-badge">Mastercard</span>
+                <span class="payment-badge">МИР</span>
+                <span class="payment-badge">Bitcoin</span>
+                <span class="payment-badge">Ethereum</span>
+                <span class="payment-badge">USDT</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom casino-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2025 Royal Casino. All rights reserved.</p>
+                <div class="footer-legal-badges">
+                    <span class="age-limit">18+</span>
+                    <span class="license-badge">License #12345</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <div class="modal-overlay" id="generic-modal-overlay">
+            <div class="modal-content" id="modal-content">
+                <span class="modal-close" id="generic-modal-close">&times;</span>
+                <div id="modal-dynamic-content"></div> 
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+</body>
+</html>
